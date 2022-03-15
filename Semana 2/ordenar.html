@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ordenar</title>
+</head>
+<body class="secondary-background">
+    <header>
+        <nav>
+            <ul id="navbar-list" class="horizontal-list">
+                <li><a class="bakefy-logo" href="index.html">Bakefy</a></li>
+                <li>
+                    <ul class="horizontal-list secondary-text">
+                        <li class="margin-right-spacer nav-option">¿Quiénes somos?</li>
+                        <li class="margin-right-spacer nav-option">Reseñas</li>
+                        <li class="nav-option">Rastrear pedido</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="order-section">
+        <form id="order-form" action="#" method="get">
+            <h2 class="input-title">Selecciona uno o más sabores</h2>
+            <div id="flavor-section">
+                <div class="flavor-opt-container">
+                    <label class="flavor-label" for="vanilla-flavor">Vainilla</label>
+                    <img class="flavor-icon" src="img/vanilla-icon.png" alt="Ícono de vainilla">
+                    <input type="checkbox" id="vanilla-flavor" name="flavors[]" value="vanilla">
+                </div>
+                <div class="flavor-opt-container">
+                    <label class="flavor-label" for="chocolate-flavor">Chocolate</label>
+                    <img class="flavor-icon" src="img/chocolate-icon.png" alt="Ícono de chocolate">
+                    <input type="checkbox" id="chocolate-flavor" name="flavors[]" value="chocolate">
+                </div>
+                <div class="flavor-opt-container">
+                    <label class="flavor-label" for="strawb-flavor">Fresa</label>
+                    <img class="flavor-icon" src="img/strawberry-icon.jpeg" alt="Ícono de fresa">
+                    <input type="checkbox" id="strawb-flavor" name="flavors[]" value="strawberry">
+                </div>
+            </div>
+            <h2 class="input-title">Agrega adornos</h2>
+            <div id="toppings-section">
+                <div class="topping-container">
+                    <input type="checkbox" id="candles-option" name="topings[]" value="candles">
+                    <label for="candles-option">Velas</label>
+                </div>
+                <div class="topping-container">
+                    <input type="checkbox" id="candles-option" name="topings[]" value="candles">
+                    <label for="candles-option">Flores de betún</label>
+                </div>
+                <div class="topping-container">
+                    <input type="checkbox" id="candles-option" name="topings[]" value="candles">
+                    <label for="candles-option">Chispas de colores</label>
+                </div>
+                <div class="topping-container">
+                    <input type="checkbox" id="candles-option" name="topings[]" value="candles">
+                    <label for="candles-option">Estrellas de colores</label>
+                </div>
+                <div class="topping-container">
+                    <input type="checkbox" id="candles-option" name="topings[]" value="candles">
+                    <label for="candles-option">Ralladura de chocolate</label>
+                </div>
+                <div class="topping-container">
+                    <input type="checkbox" id="candles-option" name="topings[]" value="candles">
+                    <label for="candles-option">Fruta en almibar</label>
+                </div>
+            </div>
+            <h2 class="input-title">Ingresa tus datos de envío</h2>
+            <div id="data-section">
+                <label for="name-input">Nombre completo:</label>
+                <input class="data-input" type="text" id="name-input">
+                <label for="phone-input">Teléfono:</label>
+                <input class="data-input" type="text" id="phone-input">
+                <label for="email-input">Correo electrónico:</label>
+                <input class="data-input" type="email" id="email-input">
+                <label for="description-input">Descripción general del pastel:</label>
+                <textarea id="description-input" cols="30" rows="5" maxlength="500"></textarea>
+                <div>
+                    <input id="submit-button" type="submit" value="Enviar pedido">
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-cta-section">
+            <div class="bakefy-logo">Bakefy</div>
+            <div class="newsletter-cta">
+                <p>¡Suscribete a nuestro <span class="highlight-word">newsletter</span>!</p>
+                <div id="newsletter-input">
+                    <input id="newsletter-text-input" type="text">
+                    <a id="newsletter-button" class="button" href="#">Suscribir</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-nav-section">
+            <ul class="footer-nav-list">
+                <li>
+                    <ul class="footer-nav-column">
+                        <li class="footer-title">Compañía</li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Nuestra historia</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="footer-nav-column">
+                        <li class="footer-title">Producto</li>
+                        <li><a href="#">Reseñas</a></li>
+                        <li><a href="#">Rastrear pedido</a></li>
+                        <li><a href="#">Fotos de nuestros <br>clientes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="footer-title">Recursos</li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Términos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
